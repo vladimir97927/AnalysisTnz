@@ -1,0 +1,34 @@
+﻿<Window x:Class="TnzAnalysis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TnzAnalysis"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700.21" Width="1374.79">
+    <Grid>
+        <Grid Margin="1, 1, 1, 1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"></RowDefinition>
+                <RowDefinition Height="202*"></RowDefinition>
+                <RowDefinition Height="111*"></RowDefinition>
+                <RowDefinition Height="111*"></RowDefinition>
+                <RowDefinition Height="112*"></RowDefinition>
+                <RowDefinition Height="111*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Background="White" Name="mainMenu">
+                <MenuItem Header="Файл">
+                    <MenuItem Header="Открыть" Name="openFileMenuItem" Click="openFileMenuItem_Click"/>
+                </MenuItem>
+            </Menu>
+        </Grid>
+    </Grid>
+</Window>
